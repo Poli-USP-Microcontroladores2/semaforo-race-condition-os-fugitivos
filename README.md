@@ -58,3 +58,16 @@ No repositório do grupo, incluir:
 ---
 
 **Repositório:** entregue via GitHub Classroom (um repositório por grupo) e um PDF do markdown final no Moodle.
+
+-- x --
+
+INTEGRANTES:
+Philip William
+Ricardo Peloso
+
+(Philip)
+Cenário escolhido: Duas threads que incrementam uma variável global até que haja conflito entre as duas.
+Casos de teste: Execução básica do código original; Repetibilidade; Comparação após correção.
+Descrição da race condition e da solução: As threads tentavam imprimir ao mesmo tempo e gerava conflito, fazendo com que apenas uma fosse impressa todo passo, resultando na metade do valor esperado. Implementando semáforo e mutex, os recursos necessários para a impressão eram garantidos antes de cada ciclo, evitando o conflito.
+Avaliação: A IA criou um código disfuncional, e por meio das alterações implementadas, chegou-se à conclusão de que o semáforo e o mutex podem resolver a race condition ao garantir que não haja interferência nos recursos de impressão.
+Os códigos e as evidências estão em sua respectiva branch.
